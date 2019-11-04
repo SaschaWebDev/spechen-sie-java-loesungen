@@ -60,4 +60,11 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 ### Verzweigung
 - Mit Verzweigungen kann man Anweisungen in Entweder-Oder Abläufe teilen
 - Bestimmte Anweisungen werden nur ausgeführt wenn die Bedingung der Verzweigung wahr ist
-![](verzweigung.PNG)
+![](verzweigung.PNG
+
+### Schleife(Iteration)
+- Schleifen führen dazu das bestimmte Anweisungen bedingt mehrfach ausgeführt werden können
+- Schleifen benötigen eine Abbruchsbedingung um die Iteration zu beenden
+![](schleife.PNG)
+=
+![](schleife_kompakt.PNG)
