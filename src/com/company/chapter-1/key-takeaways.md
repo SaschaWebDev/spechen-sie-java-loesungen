@@ -43,7 +43,10 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 - Variablen sind mehrfach zuweisbar
 - In der Notation werden Variablen als Rechteckt dargestellt und Zeichen als Kreise und Werte in diese hinengeschrieben
 
-
+## Anweisungen
+- Anweisungen nutzen Werte von Variablen um Berechnungen auszuführen
+- Häuftigste Art der Anweisung ist Wertzuweisung y <- x + 1 (Wert von y wird neu zugewiesen)
+- Falsche Zuweisungen wären 3 <- x  oder x + y <- x + 1
 
 
 
