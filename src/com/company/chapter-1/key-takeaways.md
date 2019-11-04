@@ -42,12 +42,22 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 - Variablen haben Datentypen
 - Variablen sind mehrfach zuweisbar
 - In der Notation werden Variablen als Rechteckt dargestellt und Zeichen als Kreise und Werte in diese hinengeschrieben
-
+![](variablen.PNG)
 ## Anweisungen
 - Anweisungen nutzen Werte von Variablen um Berechnungen auszuführen
+
+### Wertzuweisung
 - Häuftigste Art der Anweisung ist Wertzuweisung y <- x + 1 (Wert von y wird neu zugewiesen)
 - Falsche Zuweisungen wären 3 <- x  oder x + y <- x + 1
 
+### Folge (Sequenz)
+- Anweisungen werden untereinandergeschrieben in Folge ausgeführt
+- In der Notation wird der Kontrollfluss durch einen durchlaufenden Pfeil angedeutet
+- Assertions sind Zuwsicherungen die beschreiben welchen Wert eine Variable zu einem Zeitpunkt hat
+- Assertions werden mit einer gestrichelten Linie nebem dem Ablaufpfeil angezeigt
+![](sequenz.PNG)
 
-
-
+### Verzweigung
+- Mit Verzweigungen kann man Anweisungen in Entweder-Oder Abläufe teilen
+- Bestimmte Anweisungen werden nur ausgeführt wenn die Bedingung der Verzweigung wahr ist
+![](verzweigung.PNG)
