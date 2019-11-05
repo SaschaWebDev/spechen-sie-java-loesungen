@@ -1,11 +1,13 @@
 # Programmieren mit Java Chapter 2
 
 ## Einfache Programme
+
 - Java ist eine moderne Programmiersprache
 - Weite Verbreitung und sehr portabel für alle Maschinen dank jvm
 - Objektierung, Komponenten, Parallelität und Exceptions werden unterstützt
 
 ## Grundsymbole
+
 - Programme bestehen aus Namen, Keywords, Zahlen, Zeichenketten etc
 
 ### Namen
@@ -86,6 +88,7 @@
 - (3 + x * y)
 
 ### Binäre Operation
+
 - Addition mit +
 - Substration mit -
 - Multiplikation mit *
@@ -123,6 +126,74 @@
 - Ist schneller als eine echte Multiplikation aber unlesbarer
 
 ### Zuweisungsoperator
+
 - x = x + y wäre eine Zuweisung mit Berechnung
 - Es gibt die Operatoren + - * / %
 - Kurzform der Zuweisung ist x+=y x-=y x*=y x/=y x%=y
+
+## Ein/Ausgabe
+
+- Dateien oder Eingabe der Tastaturen sind einlesbar und auf Konsole oder in Dateien ausgegbar
+- In Java ist dafür eine Bilbiothek zuständig, die Klassen, Zahlen, Texte oder Bitströme handlen kann
+
+### Eingabe
+
+- readInt liefert eine Zahl int i = ln.readlineInt(); //read a number and store it in variable i
+- Mit Enter wird beendet, bei Mehreingaben durch Leerzeichen trennen und mehrzeiligen ln.readInt() einlesen
+- ln.done() zeigt ob das Einlesen erfolgreich war
+- Eine Datei kann wie folgt ausgelesen werden
+```
+int a, b;
+ln.open("input.txt"); // open file "input.txt" for reading
+a = ln.readInt(); // read from file input.txt
+b = ln.readInt();
+ln.close(); // close file input.txt, future input comes from console
+```
+
+### Ausgabe 
+- Out.print und Out.println können Ausdrücke von long, int short und byte, char und string ausgeben
+- Zeichenketten können mit + Operator verknüpft werden "Sum =" + sum
+- Ausgaben können wir folgt geschehen:
+```
+Out.print(x + y); // writes the value of x + y to the output window
+Out.println(x+y); // writes and adds and end of the line at the end
+                    
+Out.println(); // starts a new line
+```
+
+### Beispiele
+
+- Aufforderung zwei Zahlen einzutippen, auslesen und Summe derer ausgeben
+
+![](assets/iosum.PNG)
+
+- Ausgabe in Datei
+
+![](assets/iofile.PNG)
+
+### Grundstruktur eines einfachen Programmes
+
+- Dieses Programm kann dann unter dem Namen PrintSum.java gespeichert werden (DateinName=Programmname)
+- Compilen mit javac PrintSum.java
+- Compiler erzeugt ausführbahre PrintSum.class Datei die mit java PrintSum executable ist
+
+![](assets/basic.PNG)
+
+### Konstantendeklarationen
+
+- Werden in UPPERCASE geschrieben und nur einmal initialisiert
+- Diesen der Wartbarkeit und besseren Lesbarkeit des Codes
+- Speicher muss nicht weiter reserviert werden, da nur einmal zugewiesen wird
+- Konstanten werden so initialisiert: **static final int TAX_RATE = 30;**
+
+
+![](assets/prog_const.PNG)
+
+
+### Namenswahl
+
+- Lesbarkeit eines Programmes hängt von Namenswahl bedeutend ab
+- Namen kurz aber aussagekräftig
+- Temporärer Variablen können i oder j heißen
+- Convention der Benennung ist CamelCase
+- Variablen beginnen mit lowercase Buchstaben (totalSum)
