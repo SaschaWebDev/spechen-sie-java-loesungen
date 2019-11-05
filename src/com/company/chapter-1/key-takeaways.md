@@ -5,6 +5,7 @@
 - Programme sind wie gebaute Objekte, nur immateriell
 - Computer arbeiten sequentiell, daher müssen Anweisen sehr präzise sein
 - Programmierer denken mit Variablen und Objekten in höherer Abstraktion als Binärform oder Maschinencode
+- Tests können keine Korrektheit eines Algoritmus beweisen, nur Fehlerhäufigkeit
 
 ## Daten und Befehle
 - Ein Programm ist Daten + Befehle
@@ -42,6 +43,7 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 - Variablen haben Datentypen
 - Variablen sind mehrfach zuweisbar
 - In der Notation werden Variablen als Rechteckt dargestellt und Zeichen als Kreise und Werte in diese hinengeschrieben
+
 ![](variablen.PNG)
 ## Anweisungen
 - Anweisungen nutzen Werte von Variablen um Berechnungen auszuführen
@@ -55,6 +57,7 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 - In der Notation wird der Kontrollfluss durch einen durchlaufenden Pfeil angedeutet
 - Assertions sind Zuwsicherungen die beschreiben welchen Wert eine Variable zu einem Zeitpunkt hat
 - Assertions werden mit einer gestrichelten Linie nebem dem Ablaufpfeil angezeigt
+
 ![](sequenz.PNG)
 
 ### Verzweigung
@@ -65,6 +68,61 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 ### Schleife(Iteration)
 - Schleifen führen dazu das bestimmte Anweisungen bedingt mehrfach ausgeführt werden können
 - Schleifen benötigen eine Abbruchsbedingung um die Iteration zu beenden
+
 ![](schleife.PNG)
-=
-![](schleife_kompakt.PNG)
+= ![](schleife_kompakt.PNG)
+
+## Beispiele Algorithmen
+
+### Vertauschen von Variablen
+- Name und Parameter des Algorithmus werden angegeben
+- Dreieck deutet Anfang des Algorithmus an
+- Doppelpfeile zeigen das Parameter Ein- und Ausgangsvariablen sind
+- h ist eine Hilfsvariable als Zwischenspeicher
+
+![](swap.PNG)
+ 
+ ### Maximum von drei Zahlen berechnen
+ - Geschachtelte Verzweigungen können durch mehrere Abfragen komplexe System erzeugen
+ 
+![](max_drei_zahlen.PNG)
+  
+ ### Anzahl der Ziffern einer Zahl bestimmen
+ 
+![](anzahl_zahl.PNG)
+  
+### Größter gemeinsamer Teiler zweier Zahlen (GGT)
+- Euklidischer Algorithmus der Jahrhunderte Bestand hält
+- Erst Rest von Division x durch y
+- Wenn Rest=0 dann ist y der GGT
+- Ansonsten x durch y teilen und y durch den Rest ersetzen
+- Erneut Rest der Division x durch y berechnen
+
+![](ggt.PNG)
+
+- **Der größte gemeinsame Teiler von x und y ist auch der größte gemeinsame Teiler von y und dem Rest von x/y**
+
+### Quadratwurzel aus x berechnen
+- Computer rechnen auch mit Gleitkommazahlen
+- Genauigkeit der Nachkommastellen wir begrenzt
+- Reelle Zahlen kann man nur mit unendlich großen Zahlen von Kommastellen beschreiben
+- Computer hat aber begrenzten Speicher und kann nicht unendlich viele Zwischenzahlen berechnen, daher gibt es Abweichungen
+- Idee ist es als Näherungswert anzunehmen das root x / 2 ist. (nicht korrekt)
+- Danach Berechnung a = x/root, wäre root die Wurzel wäre a=root
+- Jedoch ist root etwas größer und a etwas kleiner
+- Danach die Mitte zwischen root und a berechnen (root = root + a) / 2
+- Neuer Wert von a = x/root
+- Dies wird solange wiederholt bis a=root mit akzeptierter Genauigkeit
+
+![](square_root.PNG)
+- Schleife besser als |a - root| > 0.00000001 definieren
+
+
+
+
+
+
+
+
+
+
