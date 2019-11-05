@@ -44,7 +44,7 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 - Variablen sind mehrfach zuweisbar
 - In der Notation werden Variablen als Rechteckt dargestellt und Zeichen als Kreise und Werte in diese hinengeschrieben
 
-![](variablen.PNG)
+![](assets/variablen.PNG)
 ## Anweisungen
 - Anweisungen nutzen Werte von Variablen um Berechnungen auszuführen
 
@@ -58,7 +58,7 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 - Assertions sind Zuwsicherungen die beschreiben welchen Wert eine Variable zu einem Zeitpunkt hat
 - Assertions werden mit einer gestrichelten Linie nebem dem Ablaufpfeil angezeigt
 
-![](sequenz.PNG)
+![](assets/sequenz.PNG)
 
 ### Verzweigung
 - Mit Verzweigungen kann man Anweisungen in Entweder-Oder Abläufe teilen
@@ -69,8 +69,8 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 - Schleifen führen dazu das bestimmte Anweisungen bedingt mehrfach ausgeführt werden können
 - Schleifen benötigen eine Abbruchsbedingung um die Iteration zu beenden
 
-![](schleife.PNG)
-= ![](schleife_kompakt.PNG)
+![](assets/schleife.PNG)
+= ![](assets/schleife_kompakt.PNG)
 
 ## Beispiele Algorithmen
 
@@ -80,16 +80,16 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 - Doppelpfeile zeigen das Parameter Ein- und Ausgangsvariablen sind
 - h ist eine Hilfsvariable als Zwischenspeicher
 
-![](swap.PNG)
+![](assets/swap.PNG)
  
  ### Maximum von drei Zahlen berechnen
  - Geschachtelte Verzweigungen können durch mehrere Abfragen komplexe System erzeugen
  
-![](max_drei_zahlen.PNG)
+![](assets/max_drei_zahlen.PNG)
   
  ### Anzahl der Ziffern einer Zahl bestimmen
  
-![](anzahl_zahl.PNG)
+![](assets/anzahl_zahl.PNG)
   
 ### Größter gemeinsamer Teiler zweier Zahlen (GGT)
 - Euklidischer Algorithmus der Jahrhunderte Bestand hält
@@ -98,7 +98,7 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 - Ansonsten x durch y teilen und y durch den Rest ersetzen
 - Erneut Rest der Division x durch y berechnen
 
-![](ggt.PNG)
+![](assets/ggt.PNG)
 
 - **Der größte gemeinsame Teiler von x und y ist auch der größte gemeinsame Teiler von y und dem Rest von x/y**
 
@@ -114,10 +114,11 @@ SummiereAlleZahlenBisMax(↓max ↑sum)
 - Neuer Wert von a = x/root
 - Dies wird solange wiederholt bis a=root mit akzeptierter Genauigkeit
 
-![](square_root.PNG)
+![](assets/square_root.PNG)
 - Schleife besser als |a - root| > 0.00000001 definieren
 
-
+## Grammatiken
+- Nicht prüfungsrelevant
 
 
 
