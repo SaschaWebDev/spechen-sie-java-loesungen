@@ -1,4 +1,4 @@
-# Chaper 1 - Exercises
+# Chapter 1 - Exercises
 
 ### 1) Liegt jedem Programm ein Algorithmus zugrunde? Kann man jeden Algorithmus als Programm formulieren?
 - Jedes Programm hat die Aufgabe eine Lösung für ein Problem zu bieten welches aus vielen Teilproblemen bestehen kann
