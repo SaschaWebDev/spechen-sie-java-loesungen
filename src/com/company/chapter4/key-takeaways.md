@@ -110,8 +110,9 @@ else
 
 ![](assets/schleifenarten.jpg)
 
+- Schleifen lassen sich ebenfalls ineinander transformieren
 
-
+![](assets/schleifentransformation.jpg)
 
 
 
