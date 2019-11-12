@@ -6,7 +6,7 @@
 
 - a terminiert, da j hochgezählt wird und in i gespeichert wird. Damit wird i großer als 200 werden.
 - b terminiert, da i um zwei erhöht wird aber j nur ein eins vermindert wird. i + j wird größer 200 werden.
-- c terminiert, da int beide auf 1 am Ende rundet.
+- c terminiert, da int beide auf 0 am Ende stehen.
 
 ### 2) Anzahl der Ziffern einer Zahl als Java Programm für ganzzahlige und positive Zahl.
 
@@ -28,5 +28,61 @@ public class IntCountNumber {
 }
 ```
 
-### 3) 
+### 3) Java-Programm dass die Ziffernsumme einer Zahl x berechnet uns ausgibt.
+
+```
+// Given one input variable as a positive integer the program prints of the numbers left to right
+public class IntCountSum {
+
+    public static void main(String[] args) {
+        Out.print("Bitte eine Ganzzahl für die Nummer ein!"); // Input prompt to user
+        int input = In.readInt(); // Read input as integer
+        int sum = 0;
+
+        while (input > 0) {
+            sum += input % 10;
+            input /= 10;
+        }
+        Out.print(sum);
+    }
+}
+```
+
+### 4) Wandeln Sie folgende Schleife in eine While und eine do-while Schleife um:
+```
+// Gegeben
+int s = 0;
+for (;;) {
+    int x = In.readInt();
+    if (x < 0) break;
+    s = s + x;
+}
+```
+
+```
+// WHILE
+int s = 0;
+int x = In.readInt();
+
+for (x >= 0) {
+    s = s + x;
+    x = ln.readInt();
+}
+```
+
+```
+// DO WHILE
+int s = 0;
+
+do {
+    int x = In.readInt();
+    if(x>=0)s=s+x;
+}while(x>=0);
+```
+
+### 5) 
+
+
+
+
 
