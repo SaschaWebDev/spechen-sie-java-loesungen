@@ -80,7 +80,32 @@ do {
 }while(x>=0);
 ```
 
-### 5) 
+### 5) Java-Programm für Binärzahleinlese das eine Binärzahl 00000000000000000000000000101100 in Menge {2, 3, 5} zurückgibt. Dabei kann man die letzte Binärziffer einer Zahl n durch n/2 abstalten mittels n % 2 prüfen ob sie 0 oder 1 ist.
+
+```
+// Given a binary number outputs the sets as ints of this number
+public class BinaryToInt {
+
+    public static void main(String[] args) {
+        Out.print("Bitte eine Binaerzahl ein!"); // Input prompt to user
+        int binary = In.readInt(); // Read input as integer
+
+            Out.print('{');
+            int pos = 0;
+            boolean first = true;
+            while (binary > 0) {
+                if (binary % 2 == 1) {
+                    if (first) first = false; else Out.print(',');
+                    Out.print(pos);
+                }
+                binary = binary / 2; pos++;
+            }
+            Out.println('}');
+    }
+}
+```
+
+### 6) Java-Programm für Einlese einer Zahlenfolge aus einer Textdatei, die den größten, kleinsten Wert und Mittelwert ausgibt.
 
 
 
